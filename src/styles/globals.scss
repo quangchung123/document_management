@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  //color: rgb(var(--foreground-rgb));
+
+}
+
+.dx-freespace-row td {
+  border: 1px solid #FFFFFF !important;
+}
+
+tbody {
+  .dx-column-lines td {
+    border: 1px solid lightgrey !important;
+  }
+}
+
+
+.input, .search {
+  @apply block rounded-md border border-primary py-1.5 px-2 text-gray-900 shadow-sm focus:outline-none;
+}
+
+.dx-fileuploader-wrapper, .dx-fileuploader-input-wrapper {
+  padding: 0px !important;
+  margin:0px !important;
+}
+
+.dx-field-item-help-text {
+  color: #f44336 !important;
+}
+
+
+.modal{
+  @apply px-5;
+}
+.popup-content {
+  border-radius: 5px !important;
+}
+
+.dx-fileuploader-input-label {
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 4px;
+  background: gray;
+}
+
+::-webkit-scrollbar:hover {
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+  background: #888;
+
+  &:hover {
+    background: #dc4747;
+  }
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}

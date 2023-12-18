@@ -1,0 +1,111 @@
+.Wrapper-content {
+  height: 100vh;
+  .header-content{
+    height: 50px ;
+    @apply  bg-primary;
+    display: flex;
+    justify-content: space-between;
+    .header-text {
+      display: inline-block;
+      padding: 10px 10px;
+      margin-left: 30px;
+      height: 100%;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .header-text:hover{
+      cursor: pointer;
+      background-color: white;
+      color: black;
+    }
+    .header-icon {
+      display: inline-block;
+      padding: 0 10px 0 10px;
+      height: 100%;
+      &-logout{
+        color: white;
+        margin-top: 2px;
+        font-size: 35px;
+        @apply ml-28
+      }
+    }
+    i{
+      font-size: 30px;
+      color: azure;
+    }
+    .header-name-user{
+      margin-top: 12px;
+      color: #ffffff;
+    }
+  }
+  .body-content{
+    min-height: 100%;
+    &-search{
+      @apply flex justify-between;
+      &-form{
+        width: 70%;
+      }
+      form{
+        @apply my-3 flex space-x-64;
+        label {
+          @apply mb-2 text-sm font-medium text-gray-900 sr-only dark:text-black
+        }
+        input {
+          @apply block w-full pl-10 text-lg text-gray-900 border  rounded-lg border-gray-900;
+          margin-right: 10px;
+        }
+        button {
+          @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600  dark:focus:ring-blue-800
+        }
+      }
+      &-upload{
+        margin-right: 303px;
+        margin-top: 10px;
+      }
+    }
+    &-document{
+      width: 100%;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      padding: 0px 250px;
+      div {
+        width: 100%;
+        //height: 100%;
+        .style-item{
+          min-height: 250px;
+          border: 1px solid;
+          flex-direction: column;
+          display: flex;
+          border-radius: 5px;
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+          .item-name{
+            text-align: center;
+            max-height: 149px;
+            font-weight: 500;
+          }
+          .item-discription{
+            text-align: center;
+            font-size: 13px;
+            border: 1px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+  .footer-content{
+    width: 100%;
+    height: 80px;
+    @apply  bg-slate-500 w-full;
+  }
+}
+.header-body-comment{
+   @apply bg-slate-500 p-12;
+}
+.style-item:hover{
+  box-shadow: 0 0 4px 2px rgba(82, 168, 236, 0.8) !important;
+  cursor: pointer;
+}
